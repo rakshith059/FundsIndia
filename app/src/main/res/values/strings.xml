@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FundsIndia</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hint_enter_search_term">Please enter search term</string>
+    <string name="no_data_found">No data found!! Please change your search term..</string>
+    <string name="no_internet">Please check your Internet connection and try again.</string>
+    <string name="provider">Provider :</string>
+    <string name="link">Link :</string>
+
+</resources>

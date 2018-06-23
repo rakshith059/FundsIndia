@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.activities.StoryDetailActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/activity_story_detail_iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/activity_story_detail_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/size_22sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/activity_story_detail_iv_icon" />
+
+        <TextView
+            android:id="@+id/activity_story_detail_tv_date_published"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_16sp"
+            app:layout_constraintTop_toBottomOf="@id/activity_story_detail_tv_title" />
+
+        <TextView
+            android:id="@+id/activity_story_detail_tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/size_16sp"
+            app:layout_constraintTop_toBottomOf="@id/activity_story_detail_tv_date_published" />
+
+        <TextView
+            android:id="@+id/activity_story_detail_tv_provider_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_8dp"
+            android:text="@string/provider"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/activity_story_detail_tv_description" />
+
+        <TextView
+            android:id="@+id/activity_story_detail_tv_provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/size_16sp"
+            app:layout_constraintLeft_toRightOf="@+id/activity_story_detail_tv_provider_text"
+            app:layout_constraintTop_toBottomOf="@id/activity_story_detail_tv_description" />
+
+        <TextView
+            android:id="@+id/activity_story_detail_tv_link_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_8dp"
+            android:text="@string/link"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/activity_story_detail_tv_provider" />
+
+        <TextView
+            android:id="@+id/activity_story_detail_tv_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/size_16sp"
+            app:layout_constraintLeft_toRightOf="@+id/activity_story_detail_tv_link_text"
+            app:layout_constraintTop_toBottomOf="@id/activity_story_detail_tv_provider" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
